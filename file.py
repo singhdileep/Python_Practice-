@@ -139,3 +139,41 @@ For that we have to import zip module
 #    f1=open(name,'r')
 #    print(f1.read())
 #    print()
+
+
+# import os
+# for dirpath,dirnames,filenames in os.walk('.'):
+#    print("Current Directory Path:",dirpath)
+#    print("Directories:",dirnames)
+#    print("Files:",filenames)
+#    print()
+
+
+
+'''To get information about file '''
+
+# import os
+# stats=os.stat("file.py")
+# print(stats)
+
+
+# import pickle
+# class Employee:
+#    def __init__(self,eno,ename,esal,eaddr):
+#       self.eno=eno;
+#       self.ename=ename;
+#       self.esal=esal;
+#       self.eaddr=eaddr;
+#    def display(self):
+#       print(self.eno,"\t",self.ename,"\t",self.esal,"\t",self.eaddr)
+# with open("emp.dat","wb") as f:
+#    e=Employee(100,"Durga",1000,"Hyd")
+#    pickle.dump(e,f)
+#    print("Pickling of Employee Object completed...")
+# with open("emp.dat","rb") as f:
+#    obj=pickle.load(f)
+#    print("Printing Employee Information after unpickling")
+#    obj.display()
+
+
+'''yet to learn load and loads ,dump and dumps and pickle and unpickle '''
