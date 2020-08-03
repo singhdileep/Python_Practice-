@@ -177,3 +177,10 @@ For that we have to import zip module
 
 
 '''yet to learn load and loads ,dump and dumps and pickle and unpickle '''
+
+
+
+'''To check the information of a file '''
+# import os
+# stats=os.stat("abc.txt")
+# print(stats)
