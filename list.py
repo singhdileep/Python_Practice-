@@ -88,10 +88,82 @@
 # print(rem_list(l))    
 
 
-def twosum(nums,target):
-    for i,num in enumerate(nums):
-        pair=target-num
-        if pair in nums[i+1:]:
-            return[i,nums.index(pair,i+1)]
-    return None
-print(twosum([1,8,9,2,34,4,10,1],11))  
+
+'''Python code to find the index , whose sum is equal to the target number '''
+
+
+
+# def twosum(nums,target):
+#     for i,num in enumerate(nums):
+#         pair=target-num
+#         if pair in nums[i+1:]:
+#             return[i,nums.index(pair,i+1)]
+#     return None
+# print(twosum([1,8,9,2,34,4,10,1],11))  
+
+
+# def addlen(l,target):
+#     for i in range(len(l)):
+#         for j in range(i+1,len(l)):
+#             if l[i]+l[j]==target:
+#                 return [i,j]
+#     return None 
+# print(addlen([1,2,3,6,7,8,9],9))   
+            
+
+'''Add Two List Numbers find the reverse of its sum'''
+
+# Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
+# Output: 7 -> 0 -> 8
+# Explanation: 342 + 465 = 807.
+
+
+
+# l=[1,2,3,4,5]
+# l2=[6,7,8,9,10]
+# l3=l[::-1]
+# l4=l2[::-1]
+# s=""
+# s1=""
+# for i in l3:
+#     s=s+str(i)
+# for j in l4:
+#     s1=s1+str(j)
+# s2=int(s)+int(s1)
+# s3=str(s2)[::-1]
+# print(s3)
+
+
+
+# s="abccbaaa"
+# def longest_substr(s):
+#     longest = 0
+#     for start_index in range(len(s)):
+#         s1 = set()
+#         for letter in s[start_index:]:
+#             if letter in s1:
+#                 break
+#             s1.add(letter)
+#         longest = max(longest,len(s1))
+#     return longest
+# print(longest_substr(s))    
+
+
+
+# s="abcabcdbca"
+# length = 0
+# for i in range(len(s)):
+#     for j in range(i+1,len(s)):
+#         if s[i] == s[j]:
+#             length = len(s[:j+2])
+#         else:
+#             length=len(s)
+# print(length)
+
+
+# l=[1,2,3,4,6,8,9,10]
+# for i in range(1,len(l)):
+#     if i in l:
+#         None
+#     else:
+#         print(i)    
