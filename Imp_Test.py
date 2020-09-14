@@ -646,9 +646,200 @@ for i in range(0,len(l1)):
 # print(m)    
 
 
-d={1:[1234],"a":"abc","c":12345}
-for i in d.keys(): 
-    # :print(i)
-    if d[i]==1:
-        d[i].append(222)
-print(d)
+
+# d={1:[1234],"a":"abc","c":12345}
+# d[1].append(333)
+# print(d)
+
+
+# s="Dileep kumar Singh"
+# print(s[-1:-5:-3])
+
+# a=10+5j
+# b=10+3j
+# print(a is b)
+
+# d={(1,2):[1,2,33],'A':'BCC'}
+# for i in d.keys():
+#     if i==1:
+#         d[i].append(20202)
+# print(d[(1,2)])        
+
+# d=chr(97)
+# print(d)
+# print(ord('a'))
+
+
+
+# def reverse(self, x):
+#     x = str(x)
+#     if x[0] == '-':
+#         a = int('-' + x[-1:0:-1])
+#         if a >= -2147483648 and a<= 2147483647:
+#             return 
+#          else:
+#             return 0
+#          else:
+#             a = int(x[::-1])
+#             if a >= -2147483648 and a<= 2147483647:
+#                return a
+#             else:
+#                return 0
+# print(ob1.reverse(-425))
+
+
+# a=-120
+# s=str(-a)
+# print(-int(s[::-1]))
+
+
+# a="dileep"
+# b=-3
+# print(a*b)
+
+''' find the max of the given 2 and three number */ '''
+
+# n1=int(input("Enter the first number :"))
+# n2=int(input("Enter the second number :"))
+# n3=int(input("Enter the Third number :"))
+# max=n1 if n1>n2 and n1>n3 else n2 if n2>n3 else n3
+# print("The max of Number is :",max)
+
+
+# def max_Number(a,b,c):
+#     max=a if a>b and a>c else b if b>c else c
+#     return max
+# print(max_Number(20,10,5))
+   
+''' Write a program to read 3 int numbers from the keyboard with , seperator and print'''
+
+# a,b,c=[int(x) for x in input("Enter the number :").split()]
+# print("The sum of the given number :",a+b+c)
+
+# x=eval(input("Enter the number "))
+# print(sum(x))
+
+
+
+
+'''Program to display command line Argumnet'''
+
+# from sys import argv
+# print("The number of Argumnets:",len(argv))
+# print("The list of command line Argumnets:",argv)
+# print("The command line argunment one by one :")
+# for i in argv:
+#     print(i)
+
+'''Program to print the multiplication of the given command argunment'''
+
+# from sys import argv
+# mul=1
+# argvs=argv[1:]
+# for x in argvs:
+#     n=int(x)
+#     mul=mul*n
+# print(mul)
+
+
+'''Q. Write a program to find smallest of given 2 numbers'''
+
+# a=int(input("Enter first number: "))
+# b=int(input("Enter second number: "))
+# min=a if a<b else b
+# print(min)
+
+'''Q. Write a program to check whether the given number is even or odd'''
+
+
+# n=int(input("Enter any number :"))
+# if n%2==0:
+#     print("It is even Number ")
+# else:    
+#     print("It is odd Number ")
+
+
+'''Q. Write a program to check whether the given number is in between 1 and 100?'''
+
+# n=int(input("Enter any Number :"))
+# if n>=1 and n<=100:
+#     print("The Number",n,"is between 1- 100")
+# else:
+#     print("The number",n,"is not in between 1 to 100")   
+
+
+'''Q. Write a program to print the string with index '''
+
+# s=input("Enter any string :")
+# i=0
+# for x in s:
+#     print("The character present at ",i,"index is :",x)
+#     i=i+1
+
+'''print pyrimid '''
+
+# n=input("Enter any Number:")
+# for i in range(1,int(n)+1):
+#     print(" " * (int(n)-i),end="")
+#     print("* "*i)
+
+
+
+
+
+
+
+# '''''''''''''''''''''''''''''''''''''
+
+
+# number=[10,33,0,40,0,50,9,0]
+# for n in number:
+#     if n==0:
+#         print("Hey how we can divide with zero..just skipping")
+#         continue
+#     print("100/{} = {}".format(n,100/n))
+
+
+
+
+# cart=[20,330,400,600,40,50]
+# for item in cart:
+#     if item>500:
+#         print("Item to be placed")
+#         break
+#     print(item)
+
+
+
+# name=""
+# while name!="dileep":
+#     name=input("Enter Name:")
+# print("Thanks for confirmation")    
+
+
+
+
+
+
+
+
+# n=int(input("Enter the number :"))
+# i=1
+# sum=0
+# while i<=10:
+#     sum=sum+i
+#     i=i+1
+# print("Sum is :",sum)    
+
+
+
+''''''
+
+# print("The Sum:",int(input("Enter First Number:"))+int(input("Enter Second Number:")))  
+
+
+
+s="Dileep"
+print(s)
+s=None
+print(s)
