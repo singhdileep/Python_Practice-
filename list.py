@@ -43,12 +43,13 @@
 # print(d)            
 
 
-# l=[1,2,3,3,4,4,4,5,6,6,6,7,7,7,8]   
-# d={}
-# for i in l:
-#     if i not in d:
-#         d[i]=0
-#     d[i]=d[i]+1
+l=[1,2,3,3,4,4,4,5,6,6,6,7,7,7,8]   
+d={}
+for i in l:
+    if i not in d:
+        d[i]=0
+    d[i]=d[i]+1
+print(d)    
 # for k,v in d.items():
 #     print(k,":",v)         
 

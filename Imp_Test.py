@@ -839,7 +839,124 @@ for i in range(0,len(l1)):
 
 
 
-s="Dileep"
-print(s)
-s=None
-print(s)
+# s="Dileep"
+# print(s)
+# s=None
+# print(s)
+
+
+
+# s="Dilee kumar singh"
+# i=0
+# l=len(s)
+# print("Forward Direction ")
+# while i<l:
+#     print(s[i],'')
+#     i=i+1
+# print("Backward Direction ") 
+# i=-1
+# while i>=-l:
+#     print(s[i],'')  
+#     i=i-1 
+
+# s="dileep Kumar singh"
+# l=[]
+# for i in s[::-1]:
+#     l.append(i)
+# print(l)    
+
+
+'''Program to display all positions of substring in a given main string'''
+
+# s="I am from India. I am also know Hindi"
+# s1="am"
+# res = [i for i in range(len(s)) if s.startswith(s1, i)] 
+# print(res)
+
+
+
+# s="Hi my name is dileep,I am from Gkp and It is situated in UttarPradesh Gkp"
+# s1="a"
+# l=[]
+# for i in range(len(s)):
+#     if s.startswith(s1,i):
+#         l.append(i)
+# print(l)        
+
+
+# l=['Delhi','Gkp','Hyderabad']
+# s=":".join(l)
+# print(s)
+
+
+# s="My name is dileep singh"
+# l=len(s)-1
+# rev=""
+# for i in range(l,-1,-1):
+#     rev=rev+s[i]
+# print(rev)    
+
+
+# s="my name is dileep"
+# s1=s.split()
+# l1=[]
+# l=len(s1)-1
+# for i in range(l,-1,-1):
+#     l1.append(s1[i][::-1])
+# print(" ".join(l1))    
+
+
+
+# s="Dileep Kumar singh"
+# print("The character of the even Place is  ",s[0::2])
+# print("The character of the odd Place is  ",s[1::2])
+
+
+# s1=input("Enter the string :")
+# s2=input("Enter the string :")
+# output=""
+# i,j=0,0
+# while i<len(s1) or j<len(s2):  
+#         if i<len(s1):
+#             output=output+s1[i]
+#             i+=1
+#         if j<len(s2):
+#             output=output+s2[j] 
+#             j+=1    
+# print(output)
+
+
+# s="dileep"
+# s1="singh"
+# l=list(s)
+# l2=list(s1)
+# l1=[]
+# for i in l:
+#     l1.append(i)
+# for j in l2:
+#     l1.append(j)
+# print("".join(l1))   
+
+
+
+# a = 'acegi'
+# b = 'bd'
+# result = ''
+# for i in range(len(a)) or i in range(len(b)):
+#     if i<len(a):
+#         result=result+a[i]
+#     if i<len(b):
+#         result=result+b[i]
+# print(result)            
+
+
+# s="1234556"
+# print(s[-3:])
+
+# d={(1,22):"dileep",111:"sinfh"}
+# print(d)
+
+
+# l=["Dileep","Kumar","Singh"]
+# s=",".join(l)
+# print(s)    

@@ -101,7 +101,21 @@
 # if(year%4==0 and year%100!=0 or year%400==0):
 #     print("It is a leap Year")
 # else:
-#     print("It is not a leap year")    
+#     print("It is not a leap year")   
+
+
+# year = int(input("Please Enter the Year: "))
+# if(year%4 == 0):
+#     if(year%100 == 0):
+#         if(year%400 == 0):
+#             print("%d is a Leap Year" %year)
+#         else:
+#             print("%d is Not the Leap Year" %year)
+#     else:
+#         print("%d is a Leap Year" %year)
+# else:
+#     print("%d is Not the Leap Year" %year)
+
   
 
 
@@ -188,6 +202,31 @@
 
 
 
-l=[(1,3),(3,1),(5,0),(3,2)]
-l.sort(key=lambda x:x[1])
-print(l)
+# l=[(1,3),(3,1),(5,0),(3,2)]
+# l.sort(key=lambda x:x[1])
+# print(l)
+
+
+# def A(*args,**kwrgs):
+#    print(type(args),type(kwrgs))
+
+# print(A(1,2))
+# print(A(x=1))
+# print(A(1,x=1))   
+
+
+
+# class A:
+#    pass
+# class B(A):
+#    pass
+
+# l=[1,2,3,'@','None',[],{}]
+# l1=[]
+# for i in l:
+#    if type(i)==int:
+#       l1.append(i)
+# print(l1)      
+
+
+

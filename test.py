@@ -104,7 +104,7 @@
 
 # n=int(input("Enter any Number:"))
 # f,l=0,1
-# print(f)
+# print(f)'
 # print(l)
 # for i in range(2,n):
 #     next=f+l
@@ -159,3 +159,30 @@
 #     else:
 #         print("It is not a fibonacci Number")
 
+
+
+
+l=[1,2,3,4,4,4,5,6,7,89,7,7,78,77]
+d={}
+for i in l:
+    if i in d:
+        d[i]=d.get(i,0)+1
+    else:
+        d[i]=1
+print(d)    
+
+
+# s="My name is dileep Kumar my name is dileep singh."
+# s1=s.split()
+# d={}
+# for i in s1:
+#     if i in d:
+#         d[i]=d.get(i,0)+1
+#     else:
+#         d[i]=1
+# print(d)            
+
+
+# l=[1,2,3]
+# l+='de'
+# print(l)
