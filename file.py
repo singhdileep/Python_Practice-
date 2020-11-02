@@ -31,14 +31,14 @@
 
 '''Program to count the occurence of the word from the file '''
 
-# with open("abc.txt","r") as f:    
-#     wordcount={}
-#     for word in f.read().split():
-#         if word not in wordcount:
-#             wordcount[word] = 1
-#         else:
-#             wordcount[word] += 1
-#     print (word,wordcount)
+with open("abc.txt","r") as f:    
+    wordcount={}
+    for word in f.read().split():
+        if word not in wordcount:
+            wordcount[word] = 1
+        else:
+            wordcount[word] += 1
+    print (word,wordcount)
 
 
 '''Write a program to check whether the given file exists or not. If it is available then print its content.
