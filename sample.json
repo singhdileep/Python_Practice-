@@ -1,0 +1,12 @@
+ 
+
+import json    
+with open("sample.json", "w") as p: 
+     json.dumps(var, p) 
+
+     var = {  
+        "Subjects": { 
+                    "Maths":85, 
+                    "Physics":90
+                     } 
+        } 

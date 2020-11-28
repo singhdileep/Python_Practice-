@@ -31,14 +31,14 @@
 
 '''Program to count the occurence of the word from the file '''
 
-with open("abc.txt","r") as f:    
-    wordcount={}
-    for word in f.read().split():
-        if word not in wordcount:
-            wordcount[word] = 1
-        else:
-            wordcount[word] += 1
-    print (word,wordcount)
+# with open("abc.txt","r") as f:    
+#     wordcount={}
+#     for word in f.read().split():
+#         if word not in wordcount:
+#             wordcount[word] = 1
+#         else:
+#             wordcount[word] += 1
+#     print (word,wordcount)
 
 
 '''Write a program to check whether the given file exists or not. If it is available then print its content.
@@ -105,7 +105,7 @@ with open("abc.txt","r") as f:
 #    d=list(data)
 #    for line in d:
 #       for word in line:
-#          print(word,"\t",end='') 
+#          print(word,"\t",end='')
 #       print()
 
 
@@ -184,3 +184,50 @@ For that we have to import zip module
 # import os
 # stats=os.stat("abc.txt")
 # print(stats)
+
+
+
+
+
+   #  Your task is to detect if any loop is present 
+	# in the given linked list.
+	
+# Function Arguments: head (reference to head of the linked list)
+# Return Type: True or False (boolean)
+# 	{
+		# Node Class
+
+
+
+class ListNode:
+    def __init__(self, val):
+        self.val = val
+        self.next = None
+
+
+def detectLoop(head):
+    # Using set for hashtable.
+    hashtable = set()
+    ptr = head
+    while ptr != None:
+        # Check if node address already present.
+        if ptr in hashtable:
+            return True
+        # Add the current node address to hashtable.
+        hashtable.add(ptr)
+        ptr = ptr.next
+    return False
+
+
+if __name__ == "__main__":
+    head = ListNode(2)
+    head.next = l1 = ListNode(8)
+    l1.next = l2 = ListNode(3)
+    l2.next = l3 = ListNode(5)
+    l3.next = l4 = ListNode(10)
+    l4.next = l2
+    # 2->8->3->5->10--
+    #   	^    	|
+    #   	|    	|
+    #   	---------
+    print(detectLoop(head))

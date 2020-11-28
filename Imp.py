@@ -356,7 +356,7 @@
 # sum = 10;  
 # findSubSeq(arr, n, sum)
   
-''' Print all subsequences '''
+# ''' Print all subsequences '''
 # l=[]
 # a= [1,23,4,5,6,2,8,10]
 # for i in range(0,len(a)): 
@@ -366,7 +366,7 @@
 #          l.append(v)
 # print (l) 
 
-# def sub_lists (l): 
+# # def sub_lists (l): 
 #     l1 = []   
 #     lists = [l1] 
 #     for i in range(len(l)): 
@@ -381,8 +381,8 @@
  
   
 # driver code 
-l1 = [1, 2, 3] 
-print(sub_lists(l1)) 
+# l1 = [1, 2, 3] 
+# print(sub_lists(l1)) 
 
 
 
@@ -425,3 +425,32 @@ print(sub_lists(l1))
 # for i in range(l,-1,-1):
 #    rev=rev+s[i]
 # print(rev)
+
+
+
+# n=1234321
+# s=list(str(n))
+# s1=s[::-1]
+# if s==s1:
+#    print("It is a palindrome ")
+# else:
+#    print("It is not a palindrome")   
+
+
+
+l="My name is dileep Singh"
+s=l.split()
+l=[]
+for i in s:
+   for j in   i:
+      if j not in ('a','e','i','o','u'):
+         l.append(j)
+   print(j)           
+# lw=" "
+# ls=0
+# for i in s:
+#    if len(i)>ls:
+#       lw=i
+#    ls=len(i)
+# print(lw)       
+# print(ls)     

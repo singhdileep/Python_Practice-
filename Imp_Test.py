@@ -65,7 +65,7 @@ for i in sorted(s1):
 for i in sorted(s2):
     output=output+i
 print(output)                   
-
+c
 """
 
 
@@ -960,3 +960,13 @@ for i in range(0,len(l1)):
 # l=["Dileep","Kumar","Singh"]
 # s=",".join(l)
 # print(s)    
+
+
+# l=[1,2,3,4]
+# print(l[-5:-1])
+
+# l=[1,2,3,4,[33,55,6],67,88]
+# l1=[]
+# for i in range(len(l)):
+#     l1.append(l[i])
+# print(l1)    

@@ -4,12 +4,17 @@
 # l=[1,2,3,4,'a','5']
 # l1=[]
 # l2=[]
+# s1=[]
 # for i in l:
 #     if type(i)==int or i.isdigit():
 #         l1.append(int(i))
 #     else:
 #         l2.append(i) 
-# print((sum(l1)))  
+# s=sum(l1)
+# s1.append(s)
+# s1.extend(l2)
+# # s.extend(l1)
+# print(s1)
 
 
 ''' Conver list into string '''
@@ -43,15 +48,15 @@
 # print(d)            
 
 
-l=[1,2,3,3,4,4,4,5,6,6,6,7,7,7,8]   
-d={}
-for i in l:
-    if i not in d:
-        d[i]=0
-    d[i]=d[i]+1
-print(d)    
-# for k,v in d.items():
-#     print(k,":",v)         
+# l=[1,2,3,3,4,4,4,5,6,6,6,7,7,7,8]   
+# d={}
+# for i in l:
+#     if i not in d:
+#         d[i]=0
+#     d[i]=d[i]+1
+# print(d)    
+# # for k,v in d.items():
+# #     print(k,":",v)         
 
 
 '''Convert nested list into flated list using function '''
@@ -77,7 +82,7 @@ print(d)
 # print(l)    
 
 
-'''Remove 0 from the list '''
+# '''Remove 0 from the list '''
 
 # l=[1,2,3,0,4,0,7,0,0,6,0]
 # def rem_list(l):
@@ -168,3 +173,94 @@ print(d)
 #         None
 #     else:
 #         print(i)    
+
+
+# import re
+# x="[^<b></b>]"
+# pattern=re.finditer(x,"<b>This is dileep</b>this is dilll<b>I love</b>")
+# for i in pattern:
+#     print(i.start(),"...",i.end())
+
+
+# import re
+
+# content = '''<p>The <code>Pattern</code> is a compiled
+# representation of a regular expression.</p>'''
+
+# pattern = re.compile(r'(</?[a-z]*>)')
+
+# found = re.findall(pattern, content)
+
+# for tag in found:
+#     print(tag)
+
+
+# import djang
+# print(django.get_version())
+# import random 
+# for i in range(5): 
+#     print(random(1, 5))
+
+
+# def make_pretty(func):
+#     def inner():
+#         print("I got decorted")
+#         func()
+#     return inner
+
+# @make_pretty
+# def ordinary():
+#     print("I am ordinary") 
+# ordinary()    
+
+# # pretty=make_pretty(ordinary)
+# # pretty()      
+
+
+# l=[1,2,3,4,5,6,7]
+# l1=iter(l)
+# for i in l1:
+#     print(next(l1))
+
+
+
+# class InfIter:
+#     """Infinite iterator to return all
+#         odd numbers"""
+
+#     def __iter__(self):
+#         self.num = 1
+#         return self
+
+#     def __next__(self):
+#         num = self.num
+#         self.num += 2
+#         return num
+# a = iter(InfIter())
+# print(next(a))
+# print(next(a))
+
+# l=[33,45,2,46,5,7]
+# n=len(l)
+# l1=[]
+# for i in range(n):
+#     for j in range(0,n-i-1):
+#         if l[j]>l[j+1]:
+#             l[j],l[j+1]=l[j+1],l[j]
+# for i in range(len(l)):
+#     l1.append(l[i])
+# print(l1)
+
+
+# 
+
+# import json 
+  
+# # JSON string 
+# employee ='{"id":"09", "name": "Nitin", "department":"Finance"}'
+
+# # Convert string to Python dict 
+# employee_dict = json.loads(employee) 
+# print(employee_dict) 
+  
+# print(employee_dict['name']) 

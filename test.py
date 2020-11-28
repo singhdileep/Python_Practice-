@@ -162,14 +162,14 @@
 
 
 
-l=[1,2,3,4,4,4,5,6,7,89,7,7,78,77]
-d={}
-for i in l:
-    if i in d:
-        d[i]=d.get(i,0)+1
-    else:
-        d[i]=1
-print(d)    
+# l=[1,2,3,4,4,4,5,6,7,89,7,7,78,77]
+# d={}
+# for i in l:
+#     if i in d:
+#         d[i]=d.get(i,0)+1
+#     else:
+#         d[i]=1
+# print(d)    
 
 
 # s="My name is dileep Kumar my name is dileep singh."
@@ -186,3 +186,75 @@ print(d)
 # l=[1,2,3]
 # l+='de'
 # print(l)
+
+
+
+# def findMinimumDeletion(l, r, dp, s): 
+  
+#     if l > r: 
+#         return 0
+#     if l == r: 
+#         return 1
+#     if dp[l][r] != -1: 
+#         return dp[l][r] 
+  
+#     # When a single character is deleted 
+#     res = 1 + findMinimumDeletion(l + 1, r,dp, s) 
+#     for i in range(l + 1, r + 1):  
+#         if s[l] == s[i]: 
+#             res = min(res, findMinimumDeletion(l + 1, i - 1, dp, s) +
+#                            findMinimumDeletion(i, r, dp, s)) 
+#     dp[l][r] = res 
+#     return res 
+# if __name__ == "__main__": 
+  
+#     s = "aabb"
+#     n = len(s) 
+#     N = 10
+#     dp = [[-1 for i in range(N)]  
+#               for j in range(N)] 
+#     print(findMinimumDeletion(0, n - 1, dp, s)) 
+  
+# # This code is contributed by Rituraj Jain 
+
+
+
+
+
+# def linearsearch(arr, x):
+#    for i in range(len(arr)):
+#       if arr[i] == x:
+#          return i
+#    return -1
+# arr = ['t','u','t','o','r','i','a','l']
+# x = 'a'
+# print("element found at index "+str(linearsearch(arr,x)))
+
+# l1=[]
+# l=[1,2,4,22,4,3]
+# for i in l:  
+#     l1.append(i+1)
+# print(l1)
+
+
+# x = [[1,2,3,4],[4,5,6]]
+# y=[[z+1 for z in y] for y in x]
+# print(y)
+
+# test_data = [
+#     [1,2,3]
+#     ,[2,4]
+#     ,5
+#     ,[6,7,[8,9]]
+#     ]
+
+# import types
+# import numbers
+
+# def inc_el(list_or_num):
+#     if isinstance(list_or_num, numbers.Number):
+#         return list_or_num +1
+#     elif type(list_or_num) == types.ListType:
+#         return (map(inc_el, list_or_num))
+# print (map(inc_el, test_data))
+
